@@ -1,0 +1,31 @@
+{
+  "actorSpecification": 1,
+  "title": "LinkedIn Certification Checker",
+  "description": "One profile URL is one yes-or-no row and one charge.",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "inputUrl": { "type": ["string", "null"], "title": "inputUrl" },
+      "fullName": { "type": ["string", "null"], "title": "fullName" },
+      "headline": { "type": ["string", "null"], "title": "headline" },
+      "requiredCertification": { "type": ["string", "null"], "title": "requiredCertification" },
+      "hasCertification": { "type": ["boolean", "null"], "title": "hasCertification" },
+      "matchedTitle": { "type": ["string", "null"], "title": "matchedTitle" },
+      "matchedIssuer": { "type": ["string", "null"], "title": "matchedIssuer" },
+      "certificationCount": { "type": ["integer", "null"], "title": "certificationCount" },
+      "success": { "type": "boolean", "title": "success" }
+    }
+  },
+  "views": {
+    "flat": {
+      "title": "Flat results",
+      "transformation": {
+        "fields": ["inputUrl", "fullName", "headline", "requiredCertification", "hasCertification", "matchedTitle", "matchedIssuer", "certificationCount", "success"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}

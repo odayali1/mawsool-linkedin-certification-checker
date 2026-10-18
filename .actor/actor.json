@@ -1,0 +1,39 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "mawsool-linkedin-certification-checker",
+  "title": "LinkedIn Certification Checker | Yes or No",
+  "description": "LinkedIn certification checker. Give a profile URL and the certificate name. The row says yes or no, including short names like PMP or AWS and longer names like Lean Six Sigma. One charge per profile checked, Starting from $0.45 per 1,000. No LinkedIn login and no cookies.",
+  "seoTitle": "Check a LinkedIn Profile for a Certificate",
+  "seoDescription": "Yes or no: does this LinkedIn profile have the certificate you name? Starting from $0.45 per 1,000. No cookies.",
+  "categories": [
+    "LEAD_GENERATION",
+    "SOCIAL_MEDIA",
+    "AUTOMATION"
+  ],
+  "version": "1.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 1024,
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 21600,
+    "memoryMbytes": 256
+  },
+  "environmentVariables": {
+    "CHARGE_EVENT": "profile-certification-check",
+    "GUEST_API_BASE_URL": "https://guest.mawsool.tech",
+    "GUEST_API_KEY": "@mawsoolGuestApiKey"
+  },
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "Cursor Agent"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "pricing": "./pay_per_event.json",
+  "dockerfile": "../Dockerfile"
+}
