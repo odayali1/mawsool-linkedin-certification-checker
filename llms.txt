@@ -1,0 +1,26 @@
+# LinkedIn Certification Checker
+
+> Name the certificate and send the profile URL. The row says whether that profile has it. A no is still a completed check.
+
+Mawsool publishes this as an Apify Actor. Starting from $0.45 per 1,000 profiles. You are charged once whether the answer is yes or no, because the profile was checked.
+
+## Run
+
+- Apify Actor: https://apify.com/oday/mawsool-linkedin-certification-checker
+- Call: `oday/mawsool-linkedin-certification-checker`
+- API key: https://mawsool.tech/ and https://docs.mawsool.tech/
+- Contact: osama@mawsool.tech, info@mawsool.tech
+
+## Use it when
+
+You have a required certificate and a list of profile URLs.
+
+## Use something else when
+
+You want every certification, patent, and course. Use LinkedIn Certifications and Patents.
+
+## Page
+
+- Check a LinkedIn profile for one certificate: docs/check-linkedin-certification.md
+
+Mawsool is not affiliated with LinkedIn.
